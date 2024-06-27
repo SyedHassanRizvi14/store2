@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c7849;
+  }
+  
+  header {
+    background-color: #1dfe04;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .filters {
+    margin: 1rem auto; /* Center the filters horizontally */
+    text-align: center;
+  }
+  
+  .filters input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .filters button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #fa4040;
+  }
+  
+  #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem; /* Added padding to the product list container */
+  }
+  
+  .product {
+    background-color: #ffffff; /* Changed background color to white */
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33.33% - 2rem); /* Three cards in one line, considering margins */
+    max-width: 300px; /* Maximum width for responsiveness */
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Added margin-bottom to create space between title and description */
+  }
+  
+  .product p {
+    color: #a40a98;
+  }
+  

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>E-Commerce Store</h1>
+    <div class="filters">
+      <input type="text" id="search-bar" placeholder="Search for products..." onkeyup="searchProducts()">
+      <input type="number" id="min-price" placeholder="Min price" oninput="filterByPrice()">
+      <input type="number" id="max-price" placeholder="Max price" oninput="filterByPrice()">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('men\'s clothing')">Men's Clothing</button>
+      <button onclick="filterProducts('women\'s clothing')">Women's Clothing</button>
+      <button onclick="filterProducts('jewelery')">Jewelry</button>
+      <button onclick="filterProducts('electronics')">Electronics</button>
+    </div>
+  </header>
+  <main id="product-list">
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
